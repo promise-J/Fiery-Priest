@@ -66,7 +66,7 @@ const DashboardLayout = () => {
   const {onToggleMode} = useSettings()
   console.log(theme, "the theme");
   return (
-    <>
+    <Box sx={{display: 'flex'}}>
       <Box
         p={2}
         sx={{
@@ -149,7 +149,7 @@ const DashboardLayout = () => {
         </Stack>
       </Box>
       <Outlet />
-    </>
+    </Box>
   );
 };
 
