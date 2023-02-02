@@ -168,7 +168,7 @@ const Chats = () => {
                 Pinned
               </Typography>
               {ChatList.filter((el) => el.pinned).map((el) => {
-                return <ChatElement {...el} />;
+                return <ChatElement {...el} key={el.id} />;
               })}
             </Stack>
             <Stack spacing={2.4} mt={3}>
@@ -176,7 +176,7 @@ const Chats = () => {
                 All Chats
               </Typography>
               {ChatList.filter((el) => !el.pinned).map((el) => {
-                return <ChatElement {...el} />;
+                return <ChatElement {...el} key={el.id} />;
               })}
             </Stack>
           </SimpleBarStyle>
