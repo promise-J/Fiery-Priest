@@ -23,7 +23,7 @@ const SimpleBarStyle = styled(SimpleBarReact)(({ theme }) => ({
     },
   },
   '& .simplebar-track.simplebar-vertical': {
-    width: 10,
+    width: 2,
   },
   '& .simplebar-track.simplebar-horizontal .simplebar-scrollbar': {
     height: 6,
